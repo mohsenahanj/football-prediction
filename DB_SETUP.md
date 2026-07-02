@@ -8,8 +8,8 @@ mysql -u root -p
 ## ۲. دیتابیس و یوزر بساز
 ```sql
 CREATE DATABASE football_game CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'fbuser'@'localhost' IDENTIFIED BY 'StrongPass123!';
-GRANT ALL PRIVILEGES ON football_game.* TO 'fbuser'@'localhost';
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'StrongPass1234!';
+GRANT ALL PRIVILEGES ON football_game.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
@@ -18,18 +18,18 @@ EXIT;
 ```
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'football_game');
-define('DB_USER', 'fbuser');
-define('DB_PASS', 'StrongPass123!');
+define('DB_USER', 'user');
+define('DB_PASS', 'StrongPass1234!');
 ```
 
 ## ۴. install.php رو اجرا کن
 ```
-https://bonobeauty.fr/football/install.php
+https://yourdomain.com/football/install.php
 ```
 
 ## ۵. install.php رو حذف کن
 ```bash
-rm /var/www/bonobeauty/football/install.php
+rm /var/www/yourdomain/football/install.php
 ```
 
 ## پسورد ادمین پیش‌فرض: bonobeauty2024
